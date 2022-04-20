@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:giris/101/app-bar.dart';
 import 'package:giris/101/button-learn.dart';
+import 'package:giris/101/card-learn.dart';
 import 'package:giris/101/container-sized-box.dart';
 import 'package:giris/101/icon-learn.dart';
+import 'package:giris/101/image-learn.dart';
+import 'package:giris/101/padding-learn.dart';
 import 'package:giris/101/scaffold-learn.dart';
+import 'package:giris/101/stateless-learn.dart';
 import 'package:giris/101/text-learn-view.dart';
+import 'package:giris/demos/note-demos-view.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayı
@@ -24,10 +29,10 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle.light,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: IconLearnView(),
+      home: const NoteDemos(),
     );
   }
 }

@@ -1,4 +1,4 @@
-class PostModel {
+class PostModel0 {
   int? userId;
   int? id;
   String? title;

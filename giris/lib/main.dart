@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:giris/101/app-bar.dart';
@@ -24,6 +26,8 @@ import 'package:giris/101/stateless-learn.dart';
 import 'package:giris/101/text-learn-view.dart';
 import 'package:giris/101/text_field_learn.dart';
 import 'package:giris/202/model_learn_view.dart';
+import 'package:giris/202/service/service_learn_view.dart';
+import 'package:giris/202/service/service_post_learn.dart';
 import 'package:giris/202/tab_learn.dart';
 import 'package:giris/demos/color_demos_view.dart';
 import 'package:giris/demos/color_life_cycle.dart';
@@ -53,7 +57,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const ModelLearnView(),
+      home: const ServicePostLearn(),
     );
   }
 }
